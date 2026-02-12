@@ -2,75 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NovaDash</title>
+    <title>FlexDash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
+<!-- TOP NAVBAR -->
+<header class="topbar">
+    <div class="logo">FlexDash</div>
 
-    <!-- Left -->
-    <div class="logo">
-        NovaDash
-    </div>
-
-    <!-- Center Search -->
     <div class="search">
         <input type="text" placeholder="Search dashboard...">
     </div>
 
-    <!-- Right -->
-    <div class="cta">
-        <button class="btn">Sign Up</button>
+    <div class="admin">
+        👤 Admin
     </div>
-
 </header>
 
 <div class="layout">
 
+    <!-- SIDEBAR -->
     <aside class="sidebar">
-        <a href="#">Overview</a>
-        <a href="#">Performance</a>
-        <a href="#">Customers</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Analytics</a>
+        <a href="#">Users</a>
         <a href="#">Reports</a>
         <a href="#">Settings</a>
     </aside>
 
+    <!-- MAIN CONTENT -->
     <main class="content">
 
+        <!-- Top Cards -->
         <div class="cards">
             <div class="card">
-                <h3>Total Users</h3>
-                <h2>1,540</h2>
+                <h4>Users</h4>
+                <h2>1,240</h2>
             </div>
 
             <div class="card">
-                <h3>Revenue</h3>
-                <h2>₹3.1L</h2>
+                <h4>Revenue</h4>
+                <h2>₹2.4L</h2>
             </div>
 
             <div class="card">
-                <h3>Orders</h3>
-                <h2>410</h2>
+                <h4>Orders</h4>
+                <h2>320</h2>
             </div>
         </div>
 
+        <!-- Bottom Cards -->
         <div class="cards">
             <div class="card highlight">
-                <h3>Growth</h3>
-                <h2>+22%</h2>
+                <h4>Growth</h4>
+                <h2>+18%</h2>
             </div>
 
             <div class="card highlight">
-                <h3>Engagement</h3>
-                <h2>7.2%</h2>
+                <h4>Conversion</h4>
+                <h2>5.4%</h2>
             </div>
         </div>
 
     </main>
 
 </div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 FlexDash. All rights reserved.
+</footer>
+    </div>
+</footer>
 
 </body>
 </html>
