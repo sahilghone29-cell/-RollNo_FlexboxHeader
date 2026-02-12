@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #16213e;
+    padding: 16px 50px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* SEARCH BAR */
+.search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    width: 60%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.search input:focus {
+    box-shadow: 0 0 0 3px rgba(96,165,250,0.4);
+}
+
+/* CTA */
+.cta {
+    margin-left: auto;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    background: #1b263b;
+    padding: 25px;
+    gap: 18px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #60a5fa;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    background: #f0f4f8;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.highlight {
+    background: #2563eb;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .cta {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
